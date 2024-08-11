@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int i,a[100],n,b[100],new;
+    printf("enter size of array");
+    scanf("%d",&n);
+    printf("enter element");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("enter the element you insert in the begining");
+    scanf("%d",&new);
+b[0]=new;
+for(i=0;i<n;i++)
+{
+    b[i+1]=a[i];
+    }
+    
+    for(i=0;i<=n;i++){
+        printf("array elememt are:%d\n",b[i]);
+    }
+    return 0;
+}
